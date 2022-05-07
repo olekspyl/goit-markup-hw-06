@@ -1023,15 +1023,14 @@ margin-bottom: 20px;
     justify-content: center;
     align-items: center;
 }
-.modal-check-icon {
-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+.modal-condition-input {
+ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-check-icon:focus {
-    border: none;
-    outline-color: var(--hover-text-color);
-    fill: var(--bcg-first-color);
-    background-color: var(--accent-text-color);
+.modal-condition-input:focus + .modal-condition-label span {
+    border-color: var(--accent-text-color);
 }
 
 .check-icon {
